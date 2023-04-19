@@ -1,0 +1,38 @@
+<!-- header -->
+<%- include('partails/header'); -%>
+    <section id="full">
+        <div class="container my-5 content">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1">
+                        <%= title %>
+                    </h1>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                        <p class="lead">
+                            <%= content%>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3" src="<%=photo%>" alt="" width="720">
+                </div>
+            </div>
+    </section>
+    <style>
+        .content {
+            padding: 60x;
+        }
+        
+        .lead {
+            text-align: justify;
+            font-weight: 600;
+        }
+        
+        h1 {
+            padding-bottom: 20px;
+        }
+    </style>
+
+    <!-- footer -->
+    <%- include('partails/footer'); -%>
